@@ -43,3 +43,75 @@ function areaCirculo(radio){
 }
 
 console.groupEnd();
+
+
+//Interaccion con html
+
+
+//Cuadrado
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert("El perimeto es de: " + perimetro + "cm");
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert("El area es de: " + area + "cm2");
+}
+
+//triangulo
+function calcularPerimetroTriangulo(){
+    const input1 = document.getElementById("InputT1");
+    const value1 = Number(input1.value);
+
+    const input2 = document.getElementById("InputT2");
+    const value2 = Number(input2.value);
+
+    const input3 = document.getElementById("InputBase");
+    const value3 = Number(input3.value);
+
+    const perimetoT = perimetroTriangulo(value1, value2, value3);
+    alert("El perimetro del triangulo es: " + perimetoT +"cm");
+}
+
+function calcularAreaTriangulo(){
+    const input1= document.getElementById("InputBase");
+    const value1 = Number(input1.value);
+
+    const input2 = document.getElementById("InputAltura");
+    const value2 = Number(input2.value);
+
+    const areaT = areaTriangulo(value1, value2);
+    alert("El area del triangulo es: " + areaT + "cm2");
+}
+
+//circulo
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("InputRadio");
+    const value = input.value;
+
+    const perimetoC = perimetroCirculo(value);
+    alert("El perimetro del Circulo es: " + perimetoC + "cm");
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("InputRadio");
+    const value = input.value;
+
+    const areaC = areaCirculo(value);
+    alert("El area del Circulo es: " + areaC + "cm2");
+}
+
+function calcularDiametroCirculo(){
+    const input = document.getElementById("InputRadio");
+    const value = input.value;
+
+    const diametroC = diametroCirculo(value);
+    alert("El diametro del Circulo es: " + diametroC + "cm");
+}
