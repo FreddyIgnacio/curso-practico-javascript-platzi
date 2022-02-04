@@ -44,6 +44,23 @@ function areaCirculo(radio){
 
 console.groupEnd();
 
+//codigo del Triangulo isosceles
+function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
+    if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
+        alert("Los lados a y b no son iguales");
+    } else {
+        const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
+        const trianguloPequenoLadoBase = trianguloGrandeLadoA;
+
+        const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB * trianguloPequenoLadoB;
+        const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
+
+        const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+
+        const trianguloGrandeAltura = trianguloPequenoLadoA;
+        return trianguloGrandeAltura;
+    }
+}
 
 //Interaccion con html
 
@@ -89,6 +106,21 @@ function calcularAreaTriangulo(){
 
     const areaT = areaTriangulo(value1, value2);
     alert("El area del triangulo es: " + areaT + "cm2");
+}
+
+//triangulo isosceles
+function calcularAlturaTrianguloIso(){
+    const input1 = document.getElementById("InputT1");
+    const value1 = Number(input1.value);
+
+    const input2 = document.getElementById("InputT2");
+    const value2 = Number(input2.value);
+
+    const input3 = document.getElementById("InputBase");
+    const value3 = Number(input3.value);
+
+    const alturaTIso = alturaTrianguloIsosceles(value1, value2, value3);
+    alert("La altura del triangulo isosceles es: " + alturaTIso +"cm");
 }
 
 //circulo
