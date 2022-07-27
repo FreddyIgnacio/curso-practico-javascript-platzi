@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>
-            Figuras geometricas
+            Calculadora de figuras geometricas
         </h1>
-        <p>Primer taller de JavaScript</p>
     </header>
 
-    <section>
+    <section class="section-cuadrado">
         <h2>Calcula el Area y Perimetro de un cuadrado</h2>
+        <img src="./img/cuadrado.png" alt="imagen de un cuadrado">
         <form action="">
             <label for="InputCuadrado">
                 cuanto mide el lado de tu cuadrado
             </label>
-            <input id="InputCuadrado" type="number" value="">
+            <input id="InputCuadrado" type="number" value=""><br>
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perimetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular el Area</button>
         </form>
