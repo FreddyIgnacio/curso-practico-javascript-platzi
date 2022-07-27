@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #2b58a5d6;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 50px;
+    padding-top: 8px;
+}
+
+.section-cuadrado{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.section-cuadrado label{
+    font-weight: bold;
+}
+.section-cuadrado button{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid;
+}
+.section-cuadrado input {
+    background-color: #adb7e3;
+    border: 1px solid #adb7e3;
+}
+.section-cuadrado img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
