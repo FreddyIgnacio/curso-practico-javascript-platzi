@@ -34,6 +34,10 @@ header{
     font-size: 1.4rem;
     font-weight: bold;
 }
+.section-cuadrado p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 .section-cuadrado button{
     font-size: 1.4rem;
     border-radius: 5px;
@@ -64,6 +68,10 @@ header{
     font-size: 1.4rem;
     font-weight: bold;
     display: block;
+}
+.section-triangulo p{
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 .section-triangulo button{
     font-size: 1.4rem;
@@ -96,6 +104,10 @@ header{
     font-weight: bold;
     display: block;
 }
+.section-circulo p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 .section-circulo button{
     font-size: 1.4rem;
     border-radius: 5px;
@@ -111,4 +123,30 @@ header{
     width: 150px;
     height: 150px;
     margin: 12px auto;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+footer section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer li{
+    margin: 10px 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
 }
